@@ -27,4 +27,4 @@ class ClaimSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Claim
-        fields = ('id','created','series','user')
+        fields = ('id', 'created', 'series', 'user',)

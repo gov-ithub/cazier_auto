@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from cazier_auto.claim.serializers import UserSerializer, GroupSerializer, ClaimSerializer
+from cazier_auto.claim.serializers import UserSerializer, GroupSerializer
+from cazier_auto.claim.serializers import ClaimSerializer
 from cazier_auto.claim.models import Claim
 
 

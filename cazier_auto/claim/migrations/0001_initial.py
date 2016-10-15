@@ -19,10 +19,10 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Claim',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),  # nopep8
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('series', models.CharField(max_length=30)),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),  # nopep8
             ],
             options={
                 'ordering': ('created',),
