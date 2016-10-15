@@ -2,7 +2,7 @@
 
 TODO: Description
 
-# Install
+## Install
 
 ```shell
 virtualenv -p python3 venv
@@ -12,10 +12,16 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-# Coding style
+## Coding style
 
 We use [pep8](https://www.python.org/dev/peps/pep-0008/).
 
 ```shell
 pep8 cazier_auto
+```
+
+## Tests
+
+```shell
+python manage.py test
 ```
