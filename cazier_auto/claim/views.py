@@ -23,7 +23,7 @@ class GroupViewSet(viewsets.ModelViewSet):
 
 class ClaimViewSet(viewsets.ModelViewSet):
     """
-    API endpoints that allows Claims to be viewed or edited.
+    API endpoints that allows Claims to be viewed or created.
     """
     queryset = Claim.objects.all()
     serializer_class = ClaimSerializer

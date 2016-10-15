@@ -16,6 +16,15 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class ClaimSerializer(serializers.HyperlinkedModelSerializer):
+    id = serializers.IntegerField(read_only=True)
+    series = serializers.CharField(max_length=30)
+
+    def create(self, validated_data):
+        """
+        Create and return a new `Claim` instance, given the validated data.
+        """
+        return Claim.objects.create(**validated_data)
+
     class Meta:
         model = Claim
-        fields = ('created',)
+        fields = ('id','created','series','user')
