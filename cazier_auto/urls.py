@@ -16,6 +16,7 @@ Including another URLconf
 
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.views.generic.base import TemplateView
 from rest_framework import routers
 from cazier_auto.claim import views
 
@@ -27,8 +28,10 @@ router.register(r'claims', views.ClaimViewSet)
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    url(r'^', include(router.urls)),
+    url(r'^$', TemplateView.as_view(template_name='index.html'), name="home"),
+    url(r'^api/', include(router.urls)),
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls',
-                               namespace='rest_framework'))
+                               namespace='rest_framework')),
+    url(r'^hello/', views.hello)
 ]
