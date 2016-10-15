@@ -1,10 +1,8 @@
 from django.shortcuts import render
-
-# Create your views here.
-
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from cazier_auto.claim.serializers import UserSerializer, GroupSerializer
+from cazier_auto.claim.serializers import UserSerializer, GroupSerializer, ClaimSerializer
+from cazier_auto.claim.models import Claim
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -21,3 +19,11 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+
+
+class ClaimViewSet(viewsets.ModelViewSet):
+    """
+    API endpoints that allows Claims to be viewed or edited.
+    """
+    queryset = Claim.objects.all()
+    serializer_class = ClaimSerializer

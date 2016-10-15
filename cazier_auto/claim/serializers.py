@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
+from cazier_auto.claim.models import Claim
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
@@ -12,3 +13,9 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
         fields = ('url', 'name')
+
+
+class ClaimSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Claim
+        fields = ('created',)
