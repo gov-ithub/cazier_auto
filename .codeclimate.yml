@@ -1,3 +1,9 @@
+languages:
+  Ruby: false
+  Javascript: false
+  PHP: false
+  Python: true
+
 exclude_paths:
   - "cazier_auto/claim/static/**"
   - "cazier_auto/claim/templates/**"
