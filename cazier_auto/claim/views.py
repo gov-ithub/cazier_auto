@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User, Group
 from django.http import HttpResponse
+from django.shortcuts import render
 from rest_framework import viewsets
 from cazier_auto.claim.serializers import UserSerializer, GroupSerializer
 from cazier_auto.claim.serializers import ClaimSerializer
@@ -31,6 +32,17 @@ class ClaimViewSet(viewsets.ModelViewSet):
     serializer_class = ClaimSerializer
 
 
-def hello(request):
-    response = "world"
-    return HttpResponse(response)
+def home(request):
+    return render(request, 'home.html', {})
+
+
+def team(request):
+    return render(request, 'team.html', {})
+
+
+def about(request):
+    return render(request, 'about.html', {})
+
+
+def claim(request):
+    return render(request, 'claim.html', {})

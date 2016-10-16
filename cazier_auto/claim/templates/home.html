@@ -1,14 +1,28 @@
-<div class="jumbotron hero-cazier page-title">
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron hero-cazier">
     <div class="container">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
                 <div class="hero-content">
-                    <h1>Despre</h1>
+                    <h1>Descoperă istoricul mașinii tale</h1>
+                    <h3>Introdu seria de șasiu pentru a începe căutarea</h3>
+                    <form class="hero-form" role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control hero-input-sasiu" placeholder="Serie șasiu">
+                        </div>
+                        <a href="#" class="btn btn-default btn-hero">Caută</a>
+                        <p class="example">
+                            Exemplu <u>W0L0SDL6894310004</u>
+                        </p>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 <div class="container about-cazier">
     <div class="row">
@@ -40,18 +54,11 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod volutpat malesuada.</p>
             </div>
         </div>
-    </div>
-
-    <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
             <span class="separator"></span>
-            <div class="about-intro">
-                <h2>Suport pentru autovehicule importate din străinătate</h2>
-                <p>Germania, Anglia, Italia, Portugalia, Austria, Ungaria, Grecia, Bulgaria, Croația, Macedonia, Croația, Germania, Anglia, Italia, Portugalia, Austria, Ungaria</p>
-            </div>
-        </div>
-        <div class="col-sm-12">
-            <img src="static/images/about-map-01.jpg" class="img-responsive">
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et finibus quam, et scelerisque ligula. Quisque at scelerisque metus. Vestibulum eu enim nulla. Sed iaculis mattis leo, nec sollicitudin elit fringilla eget. Phasellus porta, nulla
+                id blandit tempus, tortor elit blandit ante, ac sagittis libero tortor vel tortor.</p>
         </div>
     </div>
 </div>
+{% endblock %}

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,8 +7,6 @@
         <title>Cazier Auto | GovITHub</title>
         <meta name="description" content="">
         <link rel="icon" type="image/png" href="logo.png">
-
-        {% load static %}
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
@@ -31,14 +30,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">CazierAuto</a>
+                    <a class="navbar-brand" href="/">CazierAuto</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav ">
-                        <li><a href="#">Acasă</a></li>
-                        <li><a href="#">Despre</a></li>
-                        <li><a href="#">Echipă</a></li>
+                        <li><a href="/">Acasă</a></li>
+                        <li><a href="/about">Despre</a></li>
+                        <li><a href="/team">Echipă</a></li>
                         <li><a href="#">Servicii</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -126,66 +125,8 @@
             </div>
         </div>
 
-        <div class="jumbotron hero-cazier">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <div class="hero-content">
-                            <h1>Descoperă istoricul mașinii tale</h1>
-                            <h3>Introdu seria de șasiu pentru a începe căutarea</h3>
-                            <form class="hero-form" role="form">
-                                <div class="form-group">
-                                    <input type="text" class="form-control hero-input-sasiu" placeholder="Serie șasiu">
-                                </div>
-                                <a href="#" class="btn btn-default btn-hero">Caută</a>
-                                <p class="example">
-                                    Exemplu <u>W0L0SDL6894310004</u>
-                                </p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="container about-cazier">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <div class="about-intro">
-                        <h2>Raportare completă a istoricului unui vehicul</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et finibus quam, et scelerisque ligula. Quisque at scelerisque metus. Vestibulum eu enim nulla. Sed iaculis mattis leo, nec sollicitudin elit fringilla eget. Phasellus porta, nulla
-                            id blandit tempus, tortor elit blandit ante, ac sagittis libero tortor vel tortor.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="feature-cazier">
-                        <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>
-                        <h3>Număr kilometri</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod volutpat malesuada.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="feature-cazier">
-                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-                        <h3>Istoric accidente</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod volutpat malesuada.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="feature-cazier">
-                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-                        <h3>Daune ascunse</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod volutpat malesuada.</p>
-                    </div>
-                </div>
-                <div class="col-sm-8 col-sm-offset-2">
-                    <span class="separator"></span>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et finibus quam, et scelerisque ligula. Quisque at scelerisque metus. Vestibulum eu enim nulla. Sed iaculis mattis leo, nec sollicitudin elit fringilla eget. Phasellus porta, nulla
-                        id blandit tempus, tortor elit blandit ante, ac sagittis libero tortor vel tortor.</p>
-                </div>
-            </div>
-        </div>
+        {% block content %}
+        {% endblock %}
 
         <footer class="footer-cazier">
             <div class="container">

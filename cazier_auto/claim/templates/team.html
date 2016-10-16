@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
 <div class="jumbotron hero-cazier page-title">
     <div class="container">
         <div class="row">
@@ -15,25 +19,25 @@
         <div class='col-sm-12'><span class="separator"></span></div>
         <div class="col-sm-3">
             <div class="team-member">
-                <img src="static/images/team/sorin.jpg" class="img-responsive img-circle img-person">
+                <img src="{% static 'images/team/sorin.jpg' %}" class="img-responsive img-circle img-person">
                 <h4>Sorin Vasilescu</h4>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="team-member">
-                <img src="static/images/team/rares.jpg" class="img-responsive img-circle img-person">
+                <img src="{% static 'images/team/rares.jpg' %}" class="img-responsive img-circle img-person">
                 <h4>Rareș Popescu</h4>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="team-member">
-                <img src="static/images/team/cristi.jpg" class="img-responsive img-circle img-person">
+                <img src="{% static 'images/team/cristi.jpg' %}" class="img-responsive img-circle img-person">
                 <h4>Cristian Mircea Messel</h4>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="team-member">
-                <img src="static/images/team/catalin.jpg" class="img-responsive img-circle img-person">
+                <img src="{% static 'images/team/catalin.jpg' %}" class="img-responsive img-circle img-person">
                 <h4>Cătălin Calotescu</h4>
             </div>
         </div>
@@ -41,9 +45,10 @@
     <div class="row">
         <div class="col-sm-3">
             <div class="team-member">
-                <img src="static/images/team/remus.jpg" class="img-responsive img-circle img-person">
+                <img src="{% static 'images/team/remus.jpg' %}" class="img-responsive img-circle img-person">
                 <h4>Remus Rușanu</h4>
             </div>
         </div>
     </div>
 </div>
+{% endblock %}
