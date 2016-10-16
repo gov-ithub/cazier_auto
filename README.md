@@ -2,7 +2,7 @@
 
 [![Code Climate](https://codeclimate.com/github/gov-ithub/cazier_auto/badges/gpa.svg)](https://codeclimate.com/github/gov-ithub/cazier_auto)
   
-TODO: migrate HTMLs from POC (https://github.com/gov-ithub/hackaton-v0.0.1/tree/master/cazier-auto)
+Date despre istoricul autovehiculelor inscrise in Romania.
 
 ## Install
 
