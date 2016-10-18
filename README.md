@@ -1,7 +1,9 @@
 # Cazier Auto
 
 [![Code Climate](https://codeclimate.com/github/gov-ithub/cazier_auto/badges/gpa.svg)](https://codeclimate.com/github/gov-ithub/cazier_auto)
-  
+[![Test Coverage](https://codeclimate.com/github/gov-ithub/cazier_auto/badges/coverage.svg)](https://codeclimate.com/github/gov-ithub/cazier_auto/coverage)
+[![Build Status](https://travis-ci.org/gov-ithub/cazier_auto.svg?branch=master)](https://travis-ci.org/gov-ithub/cazier_auto)
+
 Date despre istoricul autovehiculelor inscrise in Romania.
 
 ## Install
