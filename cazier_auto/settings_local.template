@@ -1,0 +1,12 @@
+"""
+  Sensitive settings should never be committed. Add sensitive settings 
+  in your local environment and dummy values in this template files. 
+   
+  When developing just do:
+  
+  > cp settings_local.template settings_local.py
+  > vim settings_local.py // edit sensitive info
+ 
+"""
+
+SECRET_KEY = 'dummy key'

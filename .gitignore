@@ -90,3 +90,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Here be dragons
+cazier_auto/settings_local.py
+db.sqlite3
