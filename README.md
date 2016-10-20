@@ -12,6 +12,7 @@ Date despre istoricul autovehiculelor inscrise in Romania.
 virtualenv -p python3 venv
 source venv/bin/activate
 pip install -r requirements.txt
+cp cazier_auto/settings_local.template cazier_auto/settings_local.py
 python manage.py migrate
 python manage.py runserver
 ```
