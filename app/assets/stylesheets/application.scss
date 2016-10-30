@@ -1,0 +1,271 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #777;
+  font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6, a.navbar-brand {
+  font-weight: 700;
+}
+.dropdown-menu>li>a, .btn-default {
+  font-family: 'Open Sans', sans-serif;
+  color: #777;
+  font-weight: 300;
+}
+ul.nav.navbar-nav li a:hover,
+ul.nav.navbar-nav li a:active,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+  color: rgb(57, 137, 248);
+}
+ul.nav.navbar-nav li a,
+.navbar-default .navbar-brand {
+  transition: .3s;
+}
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  transition: .3s;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-default {
+  background-color: #fff;
+  border: none;
+}
+.hero-cazier {
+  text-align: center;
+  background: linear-gradient( rgba(0, 128, 0, 0.7), rgba(57, 137, 248, 0.7)), url('../images/hero-image-2.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.hero-cazier h1 {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+  font-size: 42px;
+}
+.hero-cazier h1, .hero-cazier h3 {
+  color: #fff;
+  margin: 0;
+}
+.hero-cazier .btn-hero {
+  padding: 12px 26px;
+}
+.form-control {
+  height: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+.hero-cazier .form-control {
+  margin-bottom: 0;
+}
+.btn-login {
+  display: block;
+  padding: 12px;
+  margin: 0 auto;
+  width: 250px;
+  margin-top: 15px;
+}
+.modal-body {
+  text-align: center;
+}
+.hero-content {
+  padding: 140px 0;
+}
+.page-title .hero-content {
+  padding: 0;
+}
+.hero-cazier .hero-form {
+  margin-top: 30px;
+}
+.about-cazier .glyphicon {
+  font-size: 72px;
+}
+.feature-cazier {
+  text-align: center;
+}
+.about-intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.footer-cazier {
+  margin-top: 40px;
+  padding: 20px;
+  color: #919493;
+  background-color: #232A27;
+  text-align: center;
+}
+.footer-cazier p:last-child {
+  margin-bottom: 0;
+}
+.vin-details {
+  margin: 40px 0;
+}
+.vin-details table>thead>tr>td.table-title {
+  text-align: center;
+}
+.header-cazier {
+  text-align: center;
+  margin-bottom: 15px;
+}
+table.table-daune td.data-type {
+  color: #fff;
+  background-color: #E9B10F;
+}
+table.table-reparatii td.data-type {
+  color: #fff;
+  background-color: #85c100;
+}
+table.table-vehicul td.data-type {
+  color: #919493;
+  background-color: #eee;
+  font-weight: 600;
+}
+table tr.table-header td {
+  font-weight: bold;
+}
+.form-group {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+.brand-separator {
+  width: 1px;
+  background-color: #777;
+}
+.navbar-nav>li>.dropdown-menu {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.btn-header-cazier {
+  margin: 7px 4px;
+}
+p.cazier-modal-cont {
+  display: inline-block;
+  float: left;
+  margin: 7px 0;
+}
+.separator {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+}
+.img-person {
+  max-width: 200px;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.full-content,
+.full-content td.table-title.data-type,
+.full-content table.table-daune td.data-type {
+  color: transparent;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+.full-content .report-notice {
+  color: initial;
+  text-shadow: none;
+  text-align: center;
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+  .navbar-brand {
+    position: relative;
+    margin-right: 7px;
+  }
+  .navbar-brand:before {
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width: 1px;
+    background-color: #777;
+    height: 25px;
+  }
+  .form-group {
+    width: 50%;
+  }
+}
+
+p.example {
+  font-size: 12px;
+  color: #fff;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {}
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
