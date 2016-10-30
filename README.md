@@ -1,36 +1,24 @@
-# Cazier Auto
+# README
 
-[![Code Climate](https://codeclimate.com/github/gov-ithub/cazier_auto/badges/gpa.svg)](https://codeclimate.com/github/gov-ithub/cazier_auto)
-[![Test Coverage](https://codeclimate.com/github/gov-ithub/cazier_auto/badges/coverage.svg)](https://codeclimate.com/github/gov-ithub/cazier_auto/coverage)
-[![Build Status](https://travis-ci.org/gov-ithub/cazier_auto.svg?branch=master)](https://travis-ci.org/gov-ithub/cazier_auto)
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-Date despre istoricul autovehiculelor inscrise in Romania.
+Things you may want to cover:
 
-## Install
+* Ruby version
 
-```shell
-virtualenv -p python3 venv
-source venv/bin/activate
-pip install -r requirements.txt
-cp cazier_auto/settings_local.template cazier_auto/settings_local.py
-python manage.py migrate
-python manage.py runserver
-```
+* System dependencies
 
-## Contributing
+* Configuration
 
-Please read the [contribution guidelines](https://github.com/gov-ithub/guidelines).
+* Database creation
 
-## Coding style
+* Database initialization
 
-We use [pep8](https://www.python.org/dev/peps/pep-0008/).
+* How to run the test suite
 
-```shell
-pep8 cazier_auto
-```
+* Services (job queues, cache servers, search engines, etc.)
 
-## Tests
+* Deployment instructions
 
-```shell
-python manage.py test
-```
+* ...
